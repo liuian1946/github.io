@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+	<style>
+		*{margin: 0;padding: 0}
+		.box{width: 100%;height: auto;background: #f9f9f8;}
+		.top a{height: 60px;width: 150px;display: block;float: left;}
+		.top div{height: 60px;width: 120px;margin-left: 56px;float: left;font-size: 26px;font-weight: 600;line-height: 60px;}
+		.top{height: 80px;width: 950px;margin: 0 auto;padding-top: 30px}
+		.container{width: 950px;border:1px solid #e1dfda;margin: 0 auto;}
+		.container h3{height: 50px;border-bottom:1px solid #e1dfda;color: #ff002a;padding-left: 20px ; line-height: 30px;font-size: 15px;margin-bottom: 20px}
+		.container h3 span{float: right;color: #63625d;margin-right: 20px;font-size: 11px}
+		.container h3 span a{color: #0088cc}
+		.bd{text-align: center;}
+		.bd input{height: 35px;width: 300px;}
+		.container .bd [type=submit]{background: #e6133c;color: #fff;position: relative;width: 305px;right: 95px}
+		.bd span{width: 114px;display: inline-block;text-align: right;}
+		.bd .f1{text-align: left;width: 300px;color: red}
+		.f1{width: 230px; }
+		.bd li{height: 38px;padding: 10px 0}
+		.container .bd .yz{width: 200px;}
+		#input_right{width: 98px;height: 25px;display: inline-block;font-size: 16px;text-align: left;}
+
+	</style>
+<body>
+	<div class="box">
+		<div class="top">
+			<a href="#"><img src="../img/header-logo.png"></a><div>用户注册</div>
+		</div>
+		<div class="container">
+			<h3>您好！欢迎加入百联 <span>如有帐号，请返回首页<a href="../index.html">登陆</a></span></h3>
+			<form action="javascript:;" >
+				<ul class="bd">
+					<li><span>用户名:</span><input type="text" placeholder="6-20位字符，支持字母或字母与数字组合"><span class="f1"></span></li>
+					<li><span>登录密码:</span><input type="password" placeholder="6-20位字符，支持字母或字母与数字组合"><span class="f1"></span></li>
+					<li><span>确认密码:</span><input type="password" placeholder="再次输入密码"><span class="f1"></span></li>
+					<li><span>手机号:</span><input type="text" placeholder="请输入11位数的手机号码"><span class="f1"></span></li>
+					<li><span>验证码:</span><input type="text" placeholder="请输入验证码" class="yz"><span id="input_right"></span><span class="f1"></span></li>
+					<li><span>电子邮箱:</span><input type="email" placeholder="请输入有效邮箱"><span class="f1"></span></li>
+					<li><input type="submit" value="立即注册，并跳转首页登陆" class="btn"></li>
+				</ul>
+			</form>
+		</div>
+	</form>
+		
+	</div>
+	<script src="../js/jquery-1.12.4.js"></script>
+	<script src="../js/CookieUtil.js"></script>
+	<script>
+	    $(function(){
+
+
+	    	$("#input_right").click(function(){
+				var arr = ["a","1","b","2","c","3","d","4","e","5"];
+				var num1 = Math.floor(Math.random()*10);
+				var num2 = Math.floor(Math.random()*10);
+				var num3 = Math.floor(Math.random()*10);
+				var num4 = Math.floor(Math.random()*10);
+				var htmlster = arr[num1] + arr[num2] + arr[num3] + arr[num4]
+				$("#input_right").html(htmlster);
+			
+			});
+			$("#input_right").click()
+
+	    	var temp1 = false;
+	    	var temp2 = false;
+	    	var temp3 = false;
+	    	var temp4 = false;
+	    	var temp5 = false;
+	    	var temp6 = false;
+	    	var input = $(".bd input").not(".btn");
+
+	    	input.blur(function(){
+	    		//console.log($(this).parent().index())
+	    		if($(this).parent().index()==0){
+	    			var reg = /^[a-z|A-Z|0-9]{6,20}$/
+	    			if(reg.test($(this).val())){
+	    				temp1 = true;
+	    				$(".f1").eq(0).html("帐号可用");
+	    				$(".f1").eq(0).css("color","green");
+	    			}else{
+	    				temp1 = false;
+	    				$(".f1").eq(0).html("请输入6-20位字母与数字")
+	    				$(".f1").eq(0).css("color","red");
+	    			}
+
+	    		}
+	    		if($(this).parent().index()==1){
+	    			var reg = /\w{6,20}$/
+	    			if(reg.test($(this).val())){
+	    				temp2 = true;
+	    				$(".f1").eq(1).html("密码可用");
+	    				$(".f1").eq(1).css("color","green");
+	    			}else{
+	    				temp2 = false;
+	    				$(".f1").eq(1).html("请输入6-20位字母与数字或者字符")
+	    				$(".f1").eq(1).css("color","red");
+	    			}
+	    		}
+
+	    		if($(this).parent().index()==2){
+	    			var reg = /\w{6,20}$/
+	    			//console.log(input.eq(1).val())
+	    			if(reg.test($(this).val())){
+	    				if ($(this).val() == input.eq(1).val()) {
+	    					temp3 = true;
+	    					$(".f1").eq(2).html("密码一致")
+	    					$(".f1").eq(2).css("color","green");
+	    				}else{
+	    					temp3 = false;
+	    					$(".f1").eq(2).html("密码不一致");
+	    					$(".f1").eq(2).css("color","red");
+	    				}
+	    				
+	    			}else{
+	    				temp3 = false;
+	    				$(".f1").eq(2).html("请输入6-20位字母与数字或者字符")
+	    				$(".f1").eq(2).css("color","red");
+	    			}
+	    		}
+
+
+	    		if($(this).parent().index()==3){
+	    			var reg = /[0-9]{11}$/
+	    			//console.log(input.eq(1).val())
+	    			if(reg.test($(this).val())){
+	    				
+	    				temp4 = true;
+	    				$(".f1").eq(3).html("手机号码可用");
+	    				$(".f1").eq(3).css("color","green")
+	    			}else{
+	    				temp4 = false;
+	    				$(".f1").eq(3).html("请输入11位数的手机号码")
+	    				$(".f1").eq(3).css("color","red");
+	    			}
+	    		}
+
+	    		if($(this).parent().index()==4){
+	    			var reg = /[a-z|A-Z|0-9]{4}$/
+	    			//console.log(input.eq(1).val())
+	    			if(reg.test($(this).val())){
+	    				if ($(this).val() == $("#input_right").html()) {
+	    					temp5 = true;
+	    					$(".f1").eq(4).html("验证码一致")
+	    					$(".f1").eq(4).css("color","green");
+	    				}else{
+	    					temp5 = false;
+	    					$(".f1").eq(4).html("验证码不一致");
+	    					$(".f1").eq(4).css("color","red");
+	    				}
+	    				
+	    			}else{
+	    				temp5 = false;
+	    				$(".f1").eq(4).html("请输入4位的验证码");
+	    				$(".f1").eq(4).css("color","red");
+
+	    			}
+	    		}
+	    		if($(this).parent().index()==5){
+	    			var reg = /(\.com|\.cn)$/
+	    			//console.log(input.eq(1).val())
+	    			if(reg.test($(this).val())){
+	    				
+	    				temp6 = true;
+	    				$(".f1").eq(5).html("邮箱可用");
+	    				$(".f1").eq(5).css("color","green")
+	    			}else{
+	    				temp6 = false;
+	    				$(".f1").eq(5).html("邮箱不可用")
+	    				$(".f1").eq(5).css("color","red");
+	    			}
+	    		}
+	    		console.log(input.eq(0).val())
+	    		$(".btn").click(function(){
+	    			if(temp1 && temp2  && temp3  && temp4  && temp5  && temp6){
+	    				CookieUtil.saveCookie("user",input.eq(0).val())
+	    				CookieUtil.saveCookie("password",input.eq(1).val())
+	    				window.location.href = "../index.html"
+
+	    			}
+
+	    		})
+	    		
+	    	});
+	    		// console.log(input.eq(0).val())
+
+	    	
+	    	
+	    })
+	</script>
+</body>
+</html>

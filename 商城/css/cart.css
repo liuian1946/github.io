@@ -1,0 +1,248 @@
+
+
+.top{
+	height: 100px;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.topcon{
+	height: 80px;
+	width: 982px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+.topcon img{
+	display: block;
+	float: left;
+}
+
+.topcon span{
+	color: #666666;
+	height: 80px;
+	width: 100px;
+	line-height: 60px;
+	font-size: 22px;
+	display: block;
+	float: left;
+	font-weight: 500;
+	margin-left: 29px;
+}
+
+.good_dl{
+	float: right;
+	width: 250px;
+	height: 35px;
+	padding-top: 45px;
+	color: #333333;
+}
+.good_dl a{
+	color: #e61368;
+}
+
+.good_bt{
+	height: 93px;
+	width: 982px;
+	margin: 0 auto;
+	
+}
+
+.good_num1{
+	width: 100px;
+	height: 38px;
+	float: left;
+	font-size: 16px;
+	line-height: 38px;
+	color: #333333;
+	margin-top: 54px;
+	border-bottom: 2px solid #333333;
+	text-align: center;
+	font-weight: 600;
+}
+
+.good_num2{
+	height: 26px;
+	width: 330px;
+	float: right;
+	margin-top: 60px;
+	color: #999999;
+	padding-left: 50px;
+}
+
+.good_num2 i{
+	font-style: normal;
+	color: #000;
+}
+.good1_num{
+	color: #d62233;
+	margin-left: 5px;
+}
+
+.good_num2 .good2_num{
+	color: #d62233;
+	font-size: 14px;
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+.good_num2 button{
+	color: #fff;
+	background: #e6133c;
+	border: none;
+	height: 26px;
+	width: 70px;
+	
+}
+
+.good_select{
+	width: 982px;
+	height: 42px;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin: 0 auto;
+	line-height: 42px;
+}
+.good_select ul{
+	width: 982px;
+	height: 42px;
+}
+
+.good_select input{
+	outline: none;
+	border: none;
+}
+.good_select span{
+	display: block;
+	width: 60px;
+	height: 42px;
+	float: left;
+	line-height: 42px;
+}
+
+.good_select li{
+	float: left;
+	height: 42px;
+	line-height: 42px;
+	
+	
+}
+#goods_name{
+	position: absolute;
+	display: block;
+	width: 200px;
+	height: 60px;
+	left: 150px;
+	top: 10px;
+	line-height: 20px;
+}
+
+.good_select1{
+	width: 60px;
+}
+
+.good_select2{
+	width: 256px;
+}
+
+.good_select2 span{
+	margin-left: 100px;
+}
+.good_select3{
+	width: 80px;
+	margin-left: 80px;
+}
+.good_select ul .good_select4{
+	width: 80px;
+	margin-left: 70px;
+	text-align: center;
+}
+
+.good_select5{
+	padding-left: 10px;
+	width: 90px;
+	margin-left: 80px;
+}
+.good_select6{
+	width: 80px;
+	margin-left: 70px;
+}
+
+.goods_con{
+	width:982px ;
+	margin: 0 auto;
+	height: 600px;
+	overflow-y: auto;
+	
+}
+
+.goods_con li{
+	width: 982px;
+	border-bottom: 1px solid #ccc;
+	height: 108px;
+	background: #fffaf1;
+	position: relative;
+	
+}
+
+.goods_con li div{
+	float: left;
+	height: 108px;
+	line-height: 108px;
+}
+
+.g1{
+	
+}
+
+.g2{
+	line-height: 108px;
+	width: 256px;
+	margin-left: 43px;
+}
+.g2 img{
+	width: 80px;
+	height: 80px;
+	margin-top:15px ;
+	display: block;
+	float: left;
+	position: relative;
+}
+
+
+.g3{
+	width: 80px;
+	margin-left: 75px;
+}
+
+.g4{
+	width: 80px;
+	margin-left: 80px;
+}
+.g4 input{
+	width: 41px;
+	height: 28px;
+	text-align: center;
+}
+.g4 button{
+	width: 16px;
+	height: 34px;
+	border: none;
+	outline: none;
+}
+
+.g5{
+	color: #e6133c;
+	width: 80px;
+	margin-left: 80px;
+}
+.g6{
+	width: 80px;
+	margin-left: 70px;
+}
+.g6 button{
+	width: 50px;
+	height: 18px;
+	border: none;
+	outline: none;
+	background: #fff;
+}

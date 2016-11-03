@@ -1,0 +1,25 @@
+
+
+.likeBox_listcon{
+	position: relative;
+}
+
+.listBtn{
+	position: absolute;
+	right:10px ;
+	bottom: 5px;
+	width: 100px;
+	height: 30px;
+	border: 1px solid #e6133c;
+	background: #fff;
+	color: #e6133c;
+}
+
+.listBtn:hover{
+	background: #e6133c;
+	color: #fff
+}
+
+.likeBox li{
+	margin: 7px 5px;
+}
