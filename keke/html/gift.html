@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/comment.css">
+    <link rel="stylesheet" href="../css/gift.css">
+
+    <link rel="stylesheet" href="../css/topic.css">
+
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/jquery.tabs.js"></script>
+    <script src="../js/lib/template.js"></script>
+    <title>逛礼物</title>
+</head>
+<body>
+<header id="header">
+    <div>逛礼物</div>
+</header>
+<div class="main">
+    <div class="content">
+        <div class="box">
+            <ul class="tab_menu">
+                <li class="current">礼物</li>
+                <li>专题</li>
+            </ul>
+            <div class="tab_box">
+                <div class="gift">
+                    <div class="item">
+                        <div class="top">
+                            <i class="fa fa-sun-o"></i><span >创意</span>
+                        </div>
+                        <div class="lists" id="1"></div>
+                    </div>
+                    <div class="item">
+                        <div class="top">
+                            <i class="fa fa-sun-o"></i><span>玩具</span>
+                        </div>
+                        <div class="lists" id="2"></div>
+                    </div>
+                    <div class="item">
+                        <div class="top">
+                            <i class="fa fa-sun-o"></i><span>饰品</span>
+                        </div>
+                        <div class="lists" id="3"></div>
+                    </div>
+                    <div class="item">
+                        <div class="top">
+                            <i class="fa fa-sun-o"></i><span>配饰</span>
+                        </div>
+                        <div class="lists" id="4"></div>
+                    </div>
+                    <div class="item">
+                        <div class="top">
+                            <i class="fa fa-sun-o"></i><span>百货</span>
+                        </div>
+                        <div class="lists" id="5"></div>
+                    </div>
+                </div>
+                <div class="hide topic">
+                    <i class="fa fa-smile-o"></i>
+                    <span>送给谁</span>
+                    <ul id="6">
+
+                    </ul>
+                    <i class="fa fa-question-circle"></i>
+                    <span>为啥送</span>
+                    <ul id="7">
+
+                    </ul>
+                    <i class="fa fa-snapchat-ghost"></i>
+                    <span>节日礼物</span>
+                    <ul id="8">
+
+                    </ul>
+                    <i class="fa fa-gitlab"></i>
+                    <span>礼物专题</span>
+                    <ul id="9">
+
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <span></span><p>可可礼物</p><span></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <nav>
+        <a href="index.html">
+            <i class="fa fa-home"></i>
+            <div>首页</div>
+        </a>
+        <a href="gift.html">
+            <i class="fa fa-gift"></i>
+            <div>逛礼物</div>
+        </a>
+        <a href="search.html">
+            <i class="fa fa-search"></i>
+            <div>礼物搜</div>
+        </a>
+        <a href="strategy.html">
+            <i class="fa fa-star-o"></i>
+            <div>攻略</div>
+        </a>
+    </nav>
+</footer>
+<script id="mytemp1" type="text/html">
+    {{each list}}
+    <a href="show.html?Id={{$value.Id}}&who={{$value.SendWho}}&why={{$value.SendWhy}}&when={{$value.SendWhen}}&topic={{$value.TopicGift}}">
+        <div class="list">
+            <img src="{{$value.ImgUrl}}" alt="(⊙o⊙)哦~~图片丢失">
+            <p>个性定制</p>
+        </div>
+    </a>
+    {{/each}}
+</script>
+
+<script id="gift-module-who" type="text/html">
+    {{each list}}
+    <li><a href="show.html?Id={{$value.Id}}&who={{$value.SendWho}}&why={{$value.SendWhy}}&when={{$value.SendWhen}}&topic={{$value.TopicGift}}">{{$value.SendWho}}</a></li>
+    {{/each}}
+</script>
+<script id="gift-module-why" type="text/html">
+    {{each list}}
+    <li><a href="show.html?Id={{$value.Id}}&who={{$value.SendWho}}&why={{$value.SendWhy}}&when={{$value.SendWhen}}&topic={{$value.TopicGift}}">{{$value.SendWhy}}</a></li>
+    {{/each}}
+</script>
+<script id="gift-module-when" type="text/html">
+    {{each list}}
+    <li><a href="show.html?Id={{$value.Id}}&who={{$value.SendWho}}&why={{$value.SendWhy}}&when={{$value.SendWhen}}&topic={{$value.TopicGift}}">{{$value.SendWhen}}</a></li>
+    {{/each}}
+</script>
+<script id="gift-module-topic" type="text/html">
+    {{each list}}
+    <li><a href="show.html?Id={{$value.Id}}&who={{$value.SendWho}}&why={{$value.SendWhy}}&when={{$value.SendWhen}}&topic={{$value.TopicGift}}">{{$value.TopicGift}}</a></li>
+    {{/each}}
+</script>
+
+</body>
+
+<script src="../js/app/topic.js"></script>
+
+<script src="../js/app/data.js"></script>
+<script src="../js/app/gift.js"></script>
+
+</html>

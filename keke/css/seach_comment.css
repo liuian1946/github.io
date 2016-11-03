@@ -1,0 +1,50 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    background-color: #e8e8e8;
+}
+a {
+    text-decoration: none;
+}
+#header {
+    height: 49px;
+}
+#header i:nth-child(1) {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    cursor: pointer;
+    font-size: 30px;
+}
+#header .fa-search {
+    position: absolute;
+    right: 10px;
+    top: 15%;
+    cursor: pointer;
+    font-size: 30px;
+}
+#search_yc {
+    display: none;
+    margin-top: 55px;
+    margin-left: 10px;
+    width: 100%;
+    color: black;
+}
+#search_yc input {
+    width: 70%;
+    height: 40px;
+}
+#search_yc i {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+#search_yc.header_search {
+    display: block;
+}

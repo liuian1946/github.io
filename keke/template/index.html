@@ -1,0 +1,9 @@
+{{each list}}
+    <a href="detail.html?Id=0{{$value.Id}}&giftTopic={{$value.GiftTopic}}">
+        <img src="{{$value.ImgUrl}}" alt="图片加载失败">
+        <span>
+            <span>{{$value.Title}}</span>
+            <span>{{$value.Comments}}</span>
+        </span>
+    </a>
+{{/each}}

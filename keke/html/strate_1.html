@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/comment.css">
+    <link rel="stylesheet" href="../css/strate_1.css">
+    <title>攻略详情</title>
+</head>
+<body>
+<header id="header">
+    <span>
+        <i style="font-weight: 900; font-size: 35px;" class="fa fa-angle-left"></i>
+    </span>
+    <div>攻略详情</div>
+    <span class="strate-header"><i class="fa fa-share-alt"></i></span>
+</header>
+
+<!--主要内容-->
+<div class="strate_main">
+    <div class="strate_title">
+        <h1>送给新人的十佳礼物排行榜</h1>
+        <span>
+            <i class="fa fa-clock-o"></i>
+            <span class="strate-date"></span>
+        </span>
+    </div>
+    <div class="strate_detalis">
+
+    </div>
+
+</div>
+<footer id="footer">
+    <ul class="strate-footer">
+        <li class="stra_details1"><i class="fa fa-heart-o">喜欢</i></li>
+        <li class="stra_details2"><i class="fa fa-share-alt">分享好友</i></li>
+    </ul>
+</footer>
+
+<script type="text/html" id="strate_1">
+    {{each list2}}
+        <div class="strate_detalis_title">
+            <h2>{{$value.title}}</h2>
+        </div>
+        <div class="strate_text">
+            {{$value.detalis}}
+        </div>
+        <div class="strate_img">
+            <a href=""> <img src="{{$value.imgUrl}}" alt=""/></a>
+        </div>
+        <div class="strate_bottom">
+            <span class="strate_price">价格：{{$value.prices}}</span>
+            <a href="detail.html?Id={{$value.id}}">查看详情</a>
+        </div>
+    {{/each}}
+</script>
+<script data-main="../../keke/js/app/strate_1.js" src="../js/lib/require.js"></script>
+</body>
+</html>

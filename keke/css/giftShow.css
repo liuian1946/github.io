@@ -1,0 +1,162 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#header{
+    position: fixed;
+    left: 0;
+    height: 60px;
+    background-color: transparent;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+#header i{
+    font-size:40px;
+    line-height: 40px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: #ffffff;
+    background-color: rgba(255, 65, 28, 0.66);
+    text-align: center;
+    margin: 10px;
+}
+/*商品的设置*/
+.giftShow{
+    width: 100%;
+}
+.giftShow img{
+    height: 60%;
+    width: 100%;
+
+}
+.clearFix{
+    content: '';
+    display: table;
+    clear: both;
+}
+.giftDesc{
+    width: 90%;
+    margin: 10px;
+    /*margin-bottom: 10px;*/
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #dddddd;
+}
+.giftDesc>div{
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+}
+.desc{
+    width: 75%;
+    border-right: 1px dashed #dddddd;
+}
+.desc>span{
+    line-height: 30px;
+}
+.desc>span:first-child{
+    font-size: 18px;
+}
+.desc>span:last-child span{
+    display: inline-block;
+    padding-right: 10px;
+}
+.desc>span:last-child span:first-child{
+    color: #ff411c;
+    font-size: 20px;
+
+}
+.gift_share{
+    padding-left: 10px;
+    width: 18%;
+    text-align: center;
+    font-size: 16px;
+
+}
+.color_gray{
+    color: #c1c1c1;
+}
+.font26{
+    font-size: 26px;
+}
+.gift_share>span{
+    display: block;
+}
+.Comments{
+    width: 90%;
+    margin: 5px 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #dddddd;
+}
+.giftShow a{
+    display: inline-block;
+    margin: 10px;
+    width: 90%;
+    text-align: center;
+    background-color: #ff411c;
+    padding: 10px 0;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 18px;
+}
+/*商品的设置*/
+
+/*更多相关礼物的设置*/
+.moreGift{
+    width: 100%;
+    margin-top: 15px;
+}
+.moreRelate{
+    width: 100%;
+    padding: 15px 10px;
+    border-top: 1px solid #dddddd;
+    background-color: #ebebeb;
+}
+.moreRelate>span{
+    display: inline-block;
+    width: 100%;
+    padding-left: 5px;
+    border-left: 6px solid #ff411c;
+}
+/*更多相关礼物的设置*/
+/*展示内容设置*/
+.moreRelateShow{
+    width: 100%;
+}
+.moreRelateShow a{
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    float: left;
+    border-top: 1px solid #dddddd;
+    padding: 2%;
+}
+.moreRelateShow a:nth-child(2n+1){
+    border-right: 1px solid #dddddd;
+}
+.moreRelateShow a img{
+    width: 90%;
+}
+.moreRelateShow a>span{
+    display: block;
+    width: 95%;
+}
+.moreRelateShow a i{
+    display: inline-block;
+}
+.moreRelateShow a>span>span{
+    display: inline-block;
+    width: auto;
+}
+.heart>span:last-child{
+    position: absolute;
+    right: 20%;
+}

@@ -1,0 +1,145 @@
+header,
+footer {
+  z-index: 999;
+}
+.clearfix {
+  content: '';
+  display: block;
+  clear: both;
+}
+.strate_clear {
+  overflow: auto;
+}
+#strategy-main {
+  margin-top: 40px;
+  width: 100%;
+}
+#strategy-main #strategy-tab {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  height: 38px;
+}
+#strategy-main #strategy-tab li {
+  width: 50%;
+  height: 100%;
+  line-height: 44px;
+  float: left;
+  text-align: center;
+  color: #333333;
+  font-size: 18px;
+  background-color: #ffffff;
+}
+#strategy-main #strategy-tab li.active {
+  border-bottom: 2px solid red;
+}
+.strategy-panel {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.strategy-panel.active {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+#strategy-p1.active > div {
+  width: 100%;
+}
+#strategy-p1.active > div ul {
+  text-align: center;
+}
+#strategy-p1.active > div ul li:nth-child(1) {
+  margin-top: 44px;
+}
+#strategy-p1.active > div ul li {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  margin-top: 8px;
+  position: relative;
+}
+#strategy-p1.active > div ul li .all-ul-bottom {
+  z-index: 66;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: #635656;
+  width: calc(100%);
+  color: #fff;
+  line-height: 35px;
+  font-size: 15px;
+  height: 35px;
+  opacity: 0.8;
+}
+#strategy-p1.active > div ul li .all-ul-bottom .bottom-ul {
+  float: left;
+  margin-left: 20px;
+}
+#strategy-p1.active > div ul li .all-ul-bottom div {
+  float: right;
+  margin-right: 20px;
+}
+.strategy-classify {
+  margin-top: 40px;
+  z-index: 666;
+  background: #FFF;
+}
+.strategy-classify .strate-nav-title {
+  height: 45px;
+  background: #f1f1f1;
+}
+.strategy-classify .strate-nav-title h2 {
+  font-size: 18px;
+  float: left;
+  font-weight: normal;
+  line-height: 45px;
+  padding-left: 10px;
+}
+.strategy-classify .strate-nav-title h2 strong {
+  font-weight: normal;
+  background: url('../img/icon_all.png') no-repeat;
+  background-size: 480px 360px;
+  padding-left: 50px;
+  height: 45px;
+  line-height: 45px;
+  display: inline-block;
+}
+.strategy-classify .strate-nav-title h2 strong.title-tu1 {
+  background-size: 560px 420px;
+  background-position: 0 -62px;
+}
+.strategy-classify .strate-nav-title h2 strong.title-tu2 {
+  background-size: 560px 420px;
+  background-position: 0 -202px;
+}
+.strategy-classify .strate-nav-title h2 strong.title-tu3 {
+  background-size: 560px 420px;
+  background-position: 0 -132px;
+}
+.strategy-classify .strate-nav-list {
+  border-top: 1px solid #dadada;
+}
+.strategy-classify .strate-nav-list ul li {
+  float: left;
+  width: calc(33.33333333%);
+}
+.strategy-classify .strate-nav-list ul li .strate-nav-a {
+  border-right: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  text-align: center;
+  height: 40px;
+}
+.strategy-classify .strate-nav-list ul li .strate-nav-a a {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+}
+.strate_love {
+  z-index: 111;
+}
+.strate_love .fa {
+  margin-right: 5px;
+}

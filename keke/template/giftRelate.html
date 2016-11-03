@@ -1,0 +1,10 @@
+{{each listrelate}}
+    <a href="giftShow.html?id={{$value.Id}}&giftTopic={{$value.GiftTopic}}">
+        <img src="{{$value.ImgUrl}}" alt="亲不要着急哦~">
+        <span>{{$value.Title}}</span>
+        <span class="heart">
+            <span>￥{{$value.Price}}</span>
+            <span><i class="fa fa-heart"></i>{{$value.Enjoy}}</span>
+        </span>
+    </a>
+{{/each}}

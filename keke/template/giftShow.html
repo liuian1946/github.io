@@ -1,0 +1,20 @@
+{{each list}}
+    <img src="{{$value.ImgUrl}}" alt="亲不要着急哦~">
+    <div class="giftDesc clearFix">
+        <div class="desc">
+            <span>{{$value.Title}}</span><br>
+            <span >
+                <span>￥{{$value.Price}}</span>
+                <span class="color_gray">月销{{$value.SaleVolume}}件</span>
+            </span>
+        </div>
+        <div class="gift_share color_gray">
+            <span><i class="fa fa-share-alt font26"></i></span>
+            <span>分享</span>
+        </div>
+    </div>
+    <div class="Comments">
+        点评：{{$value.Comments}}
+    </div>
+    <a href="#">去淘宝购买</a>
+{{/each list}}

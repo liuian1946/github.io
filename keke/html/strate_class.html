@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/comment.css">
+    <link rel="stylesheet" href="../css/strate_class.css">
+    <title>分类</title>
+</head>
+<body>
+<header id="header">
+    <span>
+        <i style="font-weight: 900; font-size: 35px;" class="fa fa-angle-left"></i>
+    </span>
+    <div class="strate_class_title"></div>
+</header>
+<div id="strategy-main">
+    <ul id="strategy-tab">
+        <li class="active strate_all">全部</li>
+        <li class="strate_renqi">人气</li>
+        <li class="strate_jiage">价格</li>
+        <li class="strate_xiangliang">销量</li>
+    </ul>
+</div>
+<div class="class_main">
+
+</div>
+<script type="text/html" id="strate_tem3">
+{{each class_data}}
+    <div class="strate-paixu clearfix">
+        <div class="strate_class_img">
+            <img src="{{$value.ImgUrl}}" alt=""/>
+        </div>
+        <div class="strate_class_text">
+            <div class="class_info">
+                <a href="#">{{$value.Title}}</a>
+            </div>
+            <div class="class_tag">
+                <strong class="class_tag">个性刻字</strong>
+            </div>
+            <div class="class_picbox">
+                <span class="class_pic">￥{{$value.Price}}</span>
+            </div>
+            <a href="#" class="class_go">礼物详情</a>
+        </div>
+    </div>
+{{/each}}
+</script>
+<script data-main="../../keke/js/app/strate_class.js" src="../js/lib/require.js"></script>
+</body>
+</html>

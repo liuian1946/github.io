@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="../css/show.css" rel="stylesheet">
+    <link href="../css/comment.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/jquery.tabs.js"></script>
+    <script src="../js/lib/template.js"></script>
+    <script src="../js/lib/jquery.cookie.js"></script>
+    <title>礼物查看</title>
+</head>
+<body>
+<header id="header">
+   <span><a href="gift.html"><i class="fa fa-chevron-left"></i></a> </span> <div>个性定制</div><span><i class="fa fa-share-alt"></i></span>
+</header>
+<div class="main">
+    <div class="content">
+        <div class="box">
+            <ul class="tab_menu">
+                <li class="current">综合</li>
+                <li>价格</li>
+                <li>喜欢</li>
+                <li>销量</li>
+            </ul>
+            <div class="tab_box">
+                <div class="all" id="1">
+
+                </div>
+                <div class="hide" id="2">
+
+                </div>
+                <div class="hide" id="3">
+
+                </div>
+                <div class="hide" id="4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <nav>
+        <a href="index.html">
+            <i class="fa fa-home"></i>
+            <div>首页</div>
+        </a>
+        <a href="gift.html">
+            <i class="fa fa-gift"></i>
+            <div>逛礼物</div>
+        </a>
+        <a href="search.html">
+            <i class="fa fa-search"></i>
+            <div>礼物搜</div>
+        </a>
+        <a href="strategy.html">
+            <i class="fa fa-star-o"></i>
+            <div>攻略</div>
+        </a>
+    </nav>
+</footer>
+</body>
+<script id="mytemp2" type="text/html">
+    {{each list}}
+    <div class="item">
+    <a href="detail.html?Id={{$value.Id}}" data-id="{{$value.Id}}">
+            <img src="{{$value.ImgUrl}}" alt="(⊙o⊙)哦~~图片丢失">
+            <p id="title">{{$value.Title}}</p>
+    </a>
+    <p><span>￥{{$value.Price}}</span><span  class="enjoy"><i class="fa fa-heart-o"></i><span class="num">{{$value.Enjoy}}</span></span></p>
+    </div>
+    {{/each}}
+</script>
+<script src="../js/app/data.js"></script>
+
+<script src="../js/app/giftToShow.js"></script>
+
+<script src="../js/app/show.js"></script>
+</html>

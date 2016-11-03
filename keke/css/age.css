@@ -1,0 +1,106 @@
+#header div span.header_aValue{
+    right: 50%;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    /*margin: 0 auto;*/
+}
+#header{
+    overflow: auto;
+}
+#hasSelect{
+    margin-top: 50px;
+    height: 50px;
+    border-bottom: 2px solid #CCCCCC;
+    /*line-height: 50px;*/
+    padding: 10px;
+}
+#hasSelect>span{
+    font-size: 15px;
+    color: black;
+    margin-left: 10px;
+}
+
+#hasSelect .aValue{
+    margin-left: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    vertical-align: middle;
+    border: 2px solid orangered;
+    text-align: center;
+    position: relative;
+}
+#hasSelect .aValue span{
+    color: orangered;
+}
+#hasSelect .aValue .fa-check{
+  position: absolute;
+    left: 80px;
+    top: 10px;
+    color: orangered;
+    /*background-color: orangered;*/
+}
+.age_main ul{
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.age_main ul li{
+    height: 40px;
+    width: 100%;
+    margin: 10px 10px 0 10px;
+    display: inline-block;
+    line-height: 40px;
+
+}
+.age_main ul li a{
+    color: white;
+    font-size: 17px;
+}
+#footer{
+    text-align: center;
+}
+/*age页面中的样式,插入内容的*/
+#hasSelect .aAge{
+    margin-left: 20px;
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    vertical-align: middle;
+    border: 2px solid orangered;
+    text-align: center;
+    position: relative;
+}
+#hasSelect .aAge span{
+    color: orangered;
+}
+#hasSelect .aAge .fa-check{
+    position: absolute;
+    left: 70px;
+    top: 10px;
+    color: orangered;
+    /*background-color: orangered;*/
+}
+
+.mudi_main ul{
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.mudi_main ul li{
+    height: 40px;
+    width: 100%;
+    margin: 10px 10px 0 10px;
+    display: inline-block;
+    line-height: 40px;
+
+}
+.mudi_main ul li a{
+    color: white;
+    font-size: 17px;
+}
+
+

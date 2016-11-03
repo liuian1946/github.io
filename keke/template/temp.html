@@ -1,0 +1,22 @@
+{{each list}}
+<li>
+    <div>
+        <a href="detail.html?Id={{$value.Id}}&giftTopic={{$value.GiftTopic}}">
+            <img src="{{$value.ImgUrl}}" alt="">
+            <p class="imgs">{{$value.Title}}</p>
+        </a>
+        {{if $value.IsEnjoy == true }}
+        <p class="heart active">
+        {{else}}
+        <p class="heart"  id="{{$value.Id}}">
+        {{/if}}
+            <em>{{$value.Price}}</em>
+            <span class="fa fa-heart-o"></span>
+            <span class="fa fa-heart"></span>
+            <span class="span1">{{$value.SaleVolume}}</span>
+        </p>
+
+
+    </div>
+</li>
+{{/each}}

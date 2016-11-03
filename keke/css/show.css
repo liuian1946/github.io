@@ -1,0 +1,54 @@
+.box{width:100%;margin:40px auto 0;background:#fff;border:1px solid #d3d3d3}
+.box ul{padding-left: 0;margin: 0;list-style: none}
+.tab_menu{ background-color: #fff;position: absolute;top: 40px;width: 100%}
+.tab_menu li{width:25%;float:left;height:35px;line-height:35px;color:black;text-align:center;cursor:pointer;}
+.tab_menu li.current{border-bottom: 1px solid  red}
+.tab_box{background-color: #fff;width: 100%;height:100%;overflow: auto;padding-top: 34px}
+.tab_box .hide{display:none;}
+.tab_box>div{overflow: auto; margin-bottom: 47px;}
+/*item*/
+.all{
+    width: 100%;
+}
+.all:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.item{
+    width:50%;
+    padding: 10px;
+    display: inline-block;
+    border-right: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    float: left;
+}
+.item:nth-child(1),.item:nth-child(2){
+    border-top: 1px solid gainsboro;
+}
+.item img{
+    width: 100%;
+}
+#title{
+    font-size: 12px;
+    height: 42px;
+}
+.item p:last-child{
+    margin-top: 5px;
+}
+.item p span{
+    font-size: 16px;
+    display: inline-block;
+    width: 50%;
+}
+.item p span:first-child{
+    color: red;
+}
+.enjoy{
+    text-align: center;
+    color: #a5a5a5;
+}
+
+
+
+

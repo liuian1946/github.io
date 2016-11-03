@@ -1,0 +1,107 @@
+body {
+  background-color: #ffffff;
+}
+.strate-header {
+  top: 0;
+}
+.strate-footer {
+  width: 100%;
+}
+.strate-footer li {
+  float: left;
+  color: #fff;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+.strate-footer li i {
+  float: left;
+  margin-left: 17%;
+  line-height: 49px;
+  font-size: 24px;
+}
+.strate-footer li:nth-child(1) i {
+  margin-left: 28%;
+}
+.strate-footer li:nth-child(1) {
+  background-color: orange;
+}
+.strate-footer li:nth-child(1) pre {
+  color: #fff;
+  font-size: 18px;
+}
+.strate-footer li:nth-child(2) {
+  background-color: orangered;
+}
+.strate_main {
+  width: 100%;
+  margin-top: 60px;
+}
+.strate_main div:last-child {
+  margin-bottom: 49px;
+}
+.strate_main .strate_title {
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 20px;
+}
+.strate_main .strate_title h1 {
+  font-size: 24px;
+  font-weight: normal;
+}
+.strate_main .strate_title span {
+  margin-top: 5px;
+  color: #999;
+  display: inline-block;
+  font-size: 14px;
+}
+.strate_detalis {
+  font-family: arial, microsoft yahei, helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0px 20px ;
+  background-color: #ffffff;
+}
+.strate_detalis .strate_detalis_title {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 5px;
+}
+.strate_detalis .strate_detalis_title h2 {
+  font-weight: 400;
+}
+.strate_detalis .strate_text {
+  margin: 10px 5px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+.strate_detalis .strate_img {
+  width: 100%;
+}
+.strate_detalis .strate_img img {
+  width: 100%;
+}
+.strate_detalis .strate_bottom {
+  height: 34px;
+  font-size: 16px;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+.strate_detalis .strate_bottom .strate_price {
+  color: #333;
+  margin-right: 20px;
+}
+.strate_detalis .strate_bottom a {
+  height: 32px;
+  width: 102px;
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+  display: inline-block;
+  border: 1px solid #f84e4e;
+  color: #f84e4e;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
