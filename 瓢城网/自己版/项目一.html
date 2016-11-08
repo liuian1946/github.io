@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!--1.导航条需要些是什么样式的导航条,基础样式-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+
+            <!--设置图片的时候给商标添加样式背景颜色和内边距 brand商标,logo是自定义的商标-->
+            <a href="#" class="navbar-brand logo">
+                <img src="../lib/img/logo.png" alt="瓢城企业网">
+            </a>
+
+            <!--button是右侧的按钮,toggle是开关的意思,collapse是倒塌,折叠的意思,数据的获取目标是navbar-collapse,将折叠的数据放在这个开关中-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <!--iconbar是将导航栏中的数量一横条的形式显示出来,表示是一条横杠-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+
+
+        <!--下面的是显示出来的导航条的内容,是叠压的内容,添加的id是方便button获取到这里的内容,data-target当点击的时候获取用的是-->
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!--也属于导航栏中的一部分,但是需要靠右居中,用的是navbar-right-->
+                    <li class="active">
+                        <a href=""><span class="glyphicon glyphicon-home"></span>首页</a>
+                    </li>
+                    <li>
+                        <a href=""><span class="glyphicon glyphicon-list"></span>资讯</a>
+                    </li>
+                    <li>
+                        <a href=""><span class="glyphicon glyphicon-fire"></span>案例</a>
+                    </li>
+                    <li>
+                        <a href=""><span class="glyphicon glyphicon-question-sign"></span>关于</a>
+                    </li>
+                </ul>
+
+        </div>
+
+    </div>
+</nav>
+
+
+
+<div class="carousel side" id="myCarousel">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="item active" style="background-color: #223240"><img class="img-responsive" src="../lib/img/slide1.png" alt=""></div>
+        <div class="item" style="background-color: #F5E4DC"><img class="img-responsive" src="../lib/img/slide2.png" alt=""></div>
+        <div class="item" style="background-color: #DE2A2D"><img class="img-responsive" src="../lib/img/slide3.png" alt=""></div>
+    </div>
+
+
+    <a href="#myCarousel" data-slide="prev" class="carousel-control left">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#myCarousel" data-slide="next" class="carousel-control right">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+
+
+
+
+<!--下面是设置四个图标加上右边的文字,利用列块进行设置,当设置一行的时候,因为是超过了12所以会自动换行-->
+<!--图片的和文字用的是media的样式让图片的居左,文字居右,同时将图片设置成会计元素,文字才能坏绕-->
+<div class="tab1">
+    <div class="container">
+        <h2 class="tab-h2">「为什么选择瓢城企业培训」</h2>
+        <p class="tab-p">强大的师资力量,完美的实战型管理课程,让你的企业实现质的飞腾!</p>
+        <div class="row">
+            <div class="col-md-6 col">
+                <!--media是设置外边距的高度-->
+                <div class="media">
+                    <div class="media-left">
+                        <!--media-object是将其转化成块级元素-->
+                        <a href="#"><img class="media-object" src="../lib/img/tab1-1.png" alt=""></a>
+
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">课程内容</h4>
+                        <p class="text-muted">其他:搞笑不知名的的讲师编写,没有人的实战价值的材料</p>
+                        <p>我们:知名企业家,管理学大师联合编写的据欧实现性教材!</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 col">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#"><img src="../lib/img/tab1-2.png" class="media-object" alt=""></a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">师资力量</h4>
+                        <p class="text-muted">其他：非欧美正牌大学毕业的、业界没有知名度的讲师！</p>
+                        <p>我们：美国哈佛、耶鲁等世界一流高校、享有声誉的名牌专家！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col">
+                <div class="media">
+                    <div class="media-left">
+                        <!--media-object是将其转化成块级元素-->
+                        <a href="#"><img class="media-object" src="../lib/img/tab1-3.png" alt=""></a>
+
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">课程安排</h4>
+                        <p class="text-muted">其他:无法保证上课效率,没有时间表,任务无法完成!</p>
+                        <p>我们:保证按时间表的上课,效率高,当天的任务当天完成!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col">
+                <div class="media">
+                    <div class="media-left">
+                        <!--media-object是将其转化成块级元素-->
+                        <a href="#"><img class="media-object" src="../lib/img/tab1-4.png" alt=""></a>
+
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">服务团队</h4>
+                        <p class="text-muted">其他:社会招聘,服务水平参差不齐的普通员工!</p>
+                        <p>我们:内部培养,经受过良好高端服务培训的高标准员工</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<div class="tab2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 tab2-img">
+                <img class="auto img-responsive center-block" src="../lib/img/tab2.png" alt="">
+            </div>
+            <div class="text col-md-6 col-sm-6 tab2-text">
+                <h3>强大的学习体系</h3>
+                <p>经过管理学大师层层把关,让你的企业突飞猛进.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+ <!--因为图片是行内元素,转化成块级元素,用的是center-block使一直居中-->
+<div class="tab3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <img class="auto img-responsive center-block" src="../lib/img/tab3.png" alt="">
+            </div>
+            <div class="text col-md-6 col-sm-6">
+                <h3>完美的管理方式</h3>
+                <p>最新的管理培训方案,让你的企业赶超同行.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+<footer id="footer">
+    <div class="container">
+        <p>企业合作 |合作事宜 |版权投诉</p>
+        <p>苏ICP 备12345678.@ 2009-2016瓢城企训网.Powered by Bootstrap</p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="../lib/jquery/jquery.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
